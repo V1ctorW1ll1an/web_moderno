@@ -1,5 +1,7 @@
 (function () {
-    console.log(exe4(4));
+    console.log("Case1: ", exe5(0, 0));
+    console.log("Case2: ", exe5(0, "0"));
+    console.log("Case3: ", exe5(5, 0));
 })();
 
 function exe1(argument) {
@@ -34,4 +36,7 @@ function exe4(number) {
     return months[number];
 }
 
-function name(params) {}
+function exe5(firstNumber, secondNumber) {
+    return firstNumber > secondNumber || firstNumber === secondNumber;
+}
+
